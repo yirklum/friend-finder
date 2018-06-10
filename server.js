@@ -6,9 +6,15 @@ var path = require("path");
 
 // Set up Express
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = 3000;
 
 app.use(bodyParser.urlencoded ({ extended: true }));
 app.use(bodyParser.json());
 
-// Data
+
+
+
+// Make the server begin listening
+app.listen(PORT, function() {
+    console.log("Listening on PORT " + PORT);
+});
