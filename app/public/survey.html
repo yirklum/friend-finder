@@ -25,7 +25,7 @@
                 <p class="lead">Subtitle</p>
                 <hr class="my-4">
                 <p>Answer 10 questions. Meet your soulmate.</p>
-                <a class="btn btn-primary btn-lg" href="survey.html" role="button">Take the Test</a>
+                <a class="btn btn-primary btn-lg" href="./" role="button">Home</a>
             </div>
             
             <h1>Survey Questions</h1>
@@ -34,13 +34,13 @@
                 
                 <div class="form-group">
                     <label for="name">Name (Required)</label>
-                    <input type="text" class="form-control" id="name" placeholder="">
+                    <input type="text" class="form-control" id="name" placeholder="" required>
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
 
                 <div class="form-group">
                     <label for="photo-link">Link To Photo Image (Required)</label>
-                    <input type="text" class="form-control" id="photo-link" placeholder="">
+                    <input type="text" class="form-control" id="photo-link" placeholder="" required>
                 </div>
                  
                 <div class="survey">
@@ -49,7 +49,7 @@
                             Question 1: You believe yourself to be too sophisticated to eat Hot Pockets.
                         </div>
                             
-                        <select class="custom-select custom-select-sm">
+                        <select class="custom-select custom-select-sm" id="q1">
                             <option selected>Open this select menu</option>
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
@@ -64,7 +64,7 @@
                             Question 2: Sometimes you make things up about yourself to impress people.
                         </div>
                                 
-                        <select class="custom-select custom-select-sm">
+                        <select class="custom-select custom-select-sm" id="q2">
                             <option selected>Open this select menu</option>
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
@@ -79,7 +79,7 @@
                             Question 3: If you had superpowers, you would use them for good rather than evil.
                         </div>
                                 
-                        <select class="custom-select custom-select-sm">
+                        <select class="custom-select custom-select-sm" id="q3">
                             <option selected>Open this select menu</option>
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
@@ -94,7 +94,7 @@
                             Question 4: You hate butterflies because, despite popular opinion, they are just fancy bugs.
                         </div>
 
-                        <select class="custom-select custom-select-sm">
+                        <select class="custom-select custom-select-sm" id="q4">
                             <option selected>Open this select menu</option>
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
@@ -109,7 +109,7 @@
                             Question 5: If you could murder someone and would not get caught, you would do so.
                         </div>
                             
-                        <select class="custom-select custom-select-sm">
+                        <select class="custom-select custom-select-sm" id="q5">
                             <option selected>Open this select menu</option>
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
@@ -124,7 +124,7 @@
                             Question 6: You have blamed an animal for something you have done.
                         </div>
 
-                        <select class="custom-select custom-select-sm">
+                        <select class="custom-select custom-select-sm" id="q6">
                             <option selected>Open this select menu</option>
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
@@ -139,7 +139,7 @@
                             Question 7: You secretly think America should be a dictatorship with you as the unquestioned leader.
                         </div>
 
-                        <select class="custom-select custom-select-sm">
+                        <select class="custom-select custom-select-sm" id="q7">
                             <option selected>Open this select menu</option>
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
@@ -154,7 +154,7 @@
                             Question 8: You think cilantro is disgusting and would rather eat dirt.
                         </div>
     
-                        <select class="custom-select custom-select-sm">
+                        <select class="custom-select custom-select-sm" id="q8">
                             <option selected>Open this select menu</option>
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
@@ -169,7 +169,7 @@
                             Question 9: You believe that building an expensive wall will proportionally increase a country's "greatness."
                         </div>
     
-                        <select class="custom-select custom-select-sm">
+                        <select class="custom-select custom-select-sm" id="q9">
                             <option selected>Open this select menu</option>
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
@@ -184,7 +184,7 @@
                             Question 10: You find Taylor Swift to be a talented, authentic artist who is a good role model for young people.
                         </div>
         
-                        <select class="custom-select custom-select-sm">
+                        <select class="custom-select custom-select-sm" id="q10">
                             <option selected>Open this select menu</option>
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
@@ -195,15 +195,72 @@
                     </div>    
                 </div>
                                 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" id="submit" data-toggle="modal" data-target="#friendModal">Submit</button>
             </form>
+        </div>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                    
+                    </div>
+                
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer>
             <ul>
-                <li><a href=#>API Friends List</a> |</li>
-                <li><a href=#>GitHub Repo</a></li>
+                <li><a href="/api/friends">API Friends List</a> |</li>
+                <li><a href="https://github.com/yirklum/friend-finder">GitHub Repo</a></li>
             </ul>
         </footer>
+
+    <script type="text/javascript">
+        // Set up onclick event
+        $("#submit").on("click", function(event) {
+            event.preventDefault();
+            
+            // Collect user input in objects
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo-link").val().trim(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                ]
+            };
+                
+            $.post("/api/friends", newFriend)
+                .then(function(data) {
+                    console.log("survey.html", data);
+                    alert ("Adding friend");
+            });
+
+            $("friendModal").modal(show);
+        });
+    </script>
+    
     </body>
 </html>
