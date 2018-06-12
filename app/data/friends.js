@@ -1,6 +1,8 @@
+// Set up friends array
+
 var friends = [
-    {
-        name: "Christina Rust",
+    { 
+        name: "Christina Rust", 
         photo: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/14570344_10154799329701159_7385434297388088917_n.jpg?_nc_cat=0&oh=674d590c170d79e3ec5d359fd1f9d5f0&oe=5BADCB87",
         scores: [
             5,
@@ -13,7 +15,7 @@ var friends = [
             1,
             5,
             5
-        ] 
+        ]
     },
 
     {
@@ -30,7 +32,7 @@ var friends = [
             3,
             3,
             2
-        ] 
+        ]
     },
 
     {
@@ -51,29 +53,12 @@ var friends = [
     },
 
     {
-        name: "Wednesday Addams",
-        photo: "https://cdn-images-1.medium.com/max/1429/1*nNZmrUJRH0iQEUFyRzg4Kg.jpeg",
-        scores: [
-            1,
-            5,
-            5,
-            1,
-            1,
-            4,
-            2,
-            3,
-            5,
-            5
-        ]
-    },
-
-    {
         name: "Norman Bates",
         photo: "https://media.tenor.com/images/4c5604be5f72b5f3cd0dc9177cf1e5f8/tenor.png",
         scores: [
             2,
             2,
-            5,
+            3,
             2,
             1,
             1,
@@ -119,23 +104,6 @@ var friends = [
     },
 
     {
-        name: "Atticus Finch",
-        photo: "http://giancinephile.typepad.com/.a/6a0133f4ebe468970b014e610eea1f970c-500wi",
-        scores: [
-            4,
-            5,
-            1,
-            4,
-            5,
-            5,
-            5,
-            3,
-            5,
-            3
-        ]
-    },
-
-    {
         name: "Carlton Banks",
         photo: "https://i.pinimg.com/originals/b8/57/44/b85744542f0c341b6a5f1969fee40bb0.png",
         scores: [
@@ -149,6 +117,23 @@ var friends = [
             4,
             2,
             1
+        ]
+    },
+
+    {
+        name: "Atticus Finch",
+        photo: "http://giancinephile.typepad.com/.a/6a0133f4ebe468970b014e610eea1f970c-500wi",
+        scores: [
+            4,
+            5,
+            1,
+            4,
+            5,
+            5,
+            5,
+            3,
+            5,
+            3
         ]
     },
 
@@ -188,9 +173,3 @@ var friends = [
 ];
 
 module.exports = friends;
-
-
-    
-
-
-

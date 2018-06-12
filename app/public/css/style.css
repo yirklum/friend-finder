@@ -1,7 +1,66 @@
-jumbotron {
+body {
+    background-color: #fec5e5;
+}
+
+.jumbotron {
     text-align: center;
+    font-family: 'Rye';
+    background-image: url(../images/red-hearts.jpeg);
+    margin-top: 25px;
+    border: 2px solid red;
 }
 
 li {
     display: inline;
+}
+
+#friendMatchPhoto {
+    height: 300px;
+}
+
+.display-4 {
+    font-size: 90px;
+    margin-top: 25px;
+    background-color: #feffdd;
+    width: 80%;
+    margin-left: 10%;
+    color: #e6425c;
+}
+
+.lead {
+    font-size: 30px;
+    background-color: #feffdd;
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 10%;
+    color: #5b5d63;
+}
+
+#test-button, #home-button {
+    background-color: #5b5d63;
+}
+
+li a {
+    color: #5b5d63;
+}
+
+.form-group {
+    font-family: 'Patrick Hand SC';
+    font-size: 24px;
+    width: 75%;
+}
+
+.question {
+    font-family: 'Patrick Hand SC';
+    font-size: 24px;
+}
+
+.custom-select {
+    margin: 10px auto;
+    width: 30%;
+} 
+
+#submit {
+    background-color: #5b5d63;
+    margin: 25px auto;
 }

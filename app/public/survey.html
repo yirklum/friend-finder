@@ -6,26 +6,23 @@
         <title>Friend Finder</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
-              integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" 
-              crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
-                integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" 
-                crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery.js"></script>
-        
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+        
     </head>
     
     <body>
         <div class="container">
             <div class="jumbotron">
                 <h1 class="display-4">Friend Finder</h1>
-                <p class="lead">Subtitle</p>
+                <p class="lead">Answer 10 questions. Meet your soulmate.</p>
                 <hr class="my-4">
-                <p>Answer 10 questions. Meet your soulmate.</p>
-                <a class="btn btn-primary btn-lg" href="./" role="button">Home</a>
+                <a class="btn btn-primary btn-lg" href="./" role="button" id="home-button">Home</a>
             </div>
             
             <h1>Survey Questions</h1>
@@ -35,7 +32,6 @@
                 <div class="form-group">
                     <label for="name">Name (Required)</label>
                     <input type="text" class="form-control" id="name" placeholder="" required>
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
 
                 <div class="form-group">
@@ -54,8 +50,8 @@
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="2">4</option>
-                            <option value="3">5 (Strongly Disagree)</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
                         </select>
                     </div>
 
@@ -69,8 +65,8 @@
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="2">4</option>
-                            <option value="3">5 (Strongly Disagree)</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
                         </select>
                     </div>
 
@@ -84,8 +80,8 @@
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>                                
-                            <option value="2">4</option>
-                            <option value="3">5 (Strongly Disagree)</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
                         </select>
                     </div>
 
@@ -99,8 +95,8 @@
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>                                
-                            <option value="2">4</option>
-                            <option value="3">5 (Strongly Disagree)</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
                         </select>
                     </div>    
 
@@ -114,8 +110,8 @@
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>                                
-                            <option value="2">4</option>
-                            <option value="3">5 (Strongly Disagree)</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
                         </select>
                     </div>    
 
@@ -129,8 +125,8 @@
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>                                
-                            <option value="2">4</option>
-                            <option value="3">5 (Strongly Disagree)</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
                         </select>
                     </div>    
 
@@ -144,8 +140,8 @@
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>                                
-                            <option value="2">4</option>                            
-                            <option value="3">5 (Strongly Disagree)</option>
+                            <option value="4">4</option>                            
+                            <option value="5">5 (Strongly Disagree)</option>
                         </select>
                     </div>     
                 
@@ -159,8 +155,8 @@
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>                                
-                            <option value="2">4</option>                            
-                            <option value="3">5 (Strongly Disagree)</option>
+                            <option value="4">4</option>                            
+                            <option value="5">5 (Strongly Disagree)</option>
                         </select>
                     </div>    
 
@@ -174,8 +170,8 @@
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>                                
-                            <option value="2">4</option>                            
-                            <option value="3">5 (Strongly Disagree)</option>
+                            <option value="4">4</option>                            
+                            <option value="5">5 (Strongly Disagree)</option>
                         </select>
                     </div>   
                 
@@ -189,8 +185,8 @@
                             <option value="1">1 (Strongly Agree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>                                
-                            <option value="2">4</option>                            
-                            <option value="3">5 (Strongly Disagree)</option>
+                            <option value="4">4</option>                            
+                            <option value="5">5 (Strongly Disagree)</option>
                         </select>
                     </div>    
                 </div>
@@ -199,24 +195,26 @@
             </form>
         </div>
       
-        <!-- Modal -->
+       <!-- Modal -->
         <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="modalLabel">Your New Best Friend</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     
                     <div class="modal-body">
-                    
+                        <p>You are deeply compatible with:</p>
+                        <div id="friendMatchName">
+                        </div>
+                        <img id="friendMatchPhoto">
                     </div>
                 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -256,9 +254,28 @@
                 .then(function(data) {
                     console.log("survey.html", data);
                     alert ("Adding friend");
+                    $("#friendMatchName").text(data.name);
+                    console.log(data.name);
+                    $("#friendMatchPhoto").attr("src", data.photo);
+                    console.log(data.photo);
             });
+            
+            // Display modal with results
+            $("friendModal").modal();
 
-            $("friendModal").modal(show);
+            // Clear form for next submission
+            $('#name').val("");
+            $("#photo").val("");
+            $("#q1").val("");
+            $("#q2").val("");
+            $("#q3").val("");
+            $("#q4").val("");
+            $("#q5").val("");
+            $("#q6").val("");
+            $("#q7").val("");
+            $("#q8").val("");
+            $("#q9").val("");
+            $("#q10").val("");
         });
     </script>
     

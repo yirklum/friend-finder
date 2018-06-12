@@ -16,7 +16,7 @@ app.use(express.static("app/public"));
 // Connect routing files
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
-require("./app/data/friends");
+// require("./app/data/friends");
 
 // Make the server begin listening
 app.listen(PORT, function() {
