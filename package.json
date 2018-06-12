@@ -1,0 +1,26 @@
+{
+    "name": "friend-finder",
+    "version": "1.0.0",
+    "description": "Matches you to your new best friend",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/yirklum/friend-finder"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": ""
+    },
+    "homepage": "https://yirklum.github.io/friend-finder/",
+    "dependencies": {
+      "body-parser": "^1.18.3",
+      "express": "^4.16.3",
+      "path": "^0.12.7"
+    }
+  }
+  
