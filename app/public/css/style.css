@@ -16,6 +16,8 @@ li {
 
 #friendMatchPhoto {
     height: 300px;
+    margin: 5px auto;
+    padding-left: 25%;
 }
 
 .display-4 {
@@ -24,7 +26,7 @@ li {
     background-color: #feffdd;
     width: 80%;
     margin-left: 10%;
-    color: #e6425c;
+    color: #5b5d63;
 }
 
 .lead {
@@ -63,4 +65,39 @@ li a {
 #submit {
     background-color: #5b5d63;
     margin: 25px auto;
+    font-family: 'Patrick Hand SC';
+    font-size: 24px;
+}
+
+h1, h2 {
+    font-family: 'Patrick Hand SC';
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+.modal-content {
+    background-color: #feffdd;
+}
+
+#modalLabel {
+    font-family: 'Rye';
+    font-size: 36px;
+}
+
+#friendMatchName {
+    font-family: 'Patrick Hand SC';
+    font-size: 36px;
+}
+
+.modal-body {
+    font-family: 'Patrick Hand SC';
+    font-size: 24px;
+}
+
+#close-button {
+    background-color: #5b5d63;
+    font-family: 'Patrick Hand SC';
+    font-size: 24px;
 }

@@ -19,15 +19,15 @@
     <body>
         <div class="container">
             <div class="jumbotron">
-                <h1 class="display-4">Friend Finder</h1>
+                <p class="display-4">Friend Finder</p>
                 <p class="lead">Answer 10 questions. Meet your soulmate.</p>
                 <hr class="my-4">
                 <a class="btn btn-primary btn-lg" href="./" role="button" id="home-button">Home</a>
             </div>
             
-            <h1>Survey Questions</h1>
+            <h1><strong>Survey Questions</strong></h1>
             <form>
-                <h2>About You</h2>
+                <h2><strong>About You</strong></h2>
                 
                 <div class="form-group">
                     <label for="name">Name (Required)</label>
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="photo-link">Link To Photo Image (Required)</label>
+                    <label for="photo-link">Link To Photo Image</label>
                     <input type="text" class="form-control" id="photo-link" placeholder="" required>
                 </div>
                  
@@ -200,7 +200,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalLabel">Your New Best Friend</h5>
+                        <h5 class="modal-title" id="modalLabel">Your New Best Friend!</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -214,7 +214,7 @@
                     </div>
                 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="close-button">Close</button>
                     </div>
                 </div>
             </div>
@@ -253,7 +253,7 @@
             $.post("/api/friends", newFriend)
                 .then(function(data) {
                     console.log("survey.html", data);
-                    alert ("Adding friend");
+                    // alert ("Adding friend");
                     $("#friendMatchName").text(data.name);
                     console.log(data.name);
                     $("#friendMatchPhoto").attr("src", data.photo);
